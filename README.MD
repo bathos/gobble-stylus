@@ -13,7 +13,7 @@ If you haven’t installed gobble yet, [do that first][1]. This is your usual
 npm install.
 
 ```bash
-npm install gobble-stylus --save-dev
+npm install gobble-stylus-2 --save-dev
 ```
 
 ## Usage
@@ -38,7 +38,7 @@ pass to the stylus API’s `render` method. There are four exceptions: `filename
 under gobble’s purview, and `definitions` is an option unique to this module to
 provide indirect access to stylus’ `define` method.
 
-### Opt specific to gobble-stylus
+### Opt specific to gobble-stylus-2
 
  - `definitions`: An object hash of variable names / values. This corresponds
    with the `define` method -- the values can be functions or strings or

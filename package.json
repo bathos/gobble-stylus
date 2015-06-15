@@ -2,7 +2,6 @@
   "author": "Darien Maillet Valentine",
   "description": "Compile stylus files with gobble",
   "dependencies": {
-    "sander": "^0.3.4",
     "stylus": "^0.51.1"
   },
   "devDependencies": {
