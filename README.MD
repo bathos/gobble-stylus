@@ -1,6 +1,11 @@
-# gobble-stylus
+# gobble-stylus-2
 
 Render stylus as CSS as a gobble transformation.
+
+> Note: When I made this a few weeks ago, no "gobble-stylus" existed on npm.
+Since this one works rather differently than that one I’m publishing it anyway.
+The differences are that this one is file-style and allows more than a single
+src/dest, and the `definitions` option, which for my own use case is critical.
 
 ## Installation
 
@@ -18,7 +23,7 @@ In your gobblefile, you can now use the transformation.
 ```js
 import 'gobble';
 
-export default gobble('my-stylus-directory').transform('stylus', opts);
+export default gobble('my-stylus-directory').transform('stylus-2', opts);
 ```
 
 When you provide the first transform arg as a string, Gobble goes looking for it
@@ -72,12 +77,10 @@ only make sense when using the CLI.
 
 ### Notes
 
-By 
-
 This operates on any files in the gobble node that end in a stylus extension
 (styl, stylus). If you went to target a specific file (perhaps one that includes
 its peers explicitly), just use gobble’s built-in node methods to select it:
 
 ```js
-gobble('css').include('index.css').transform('stylus', opts);
+gobble('css').include('index.css').transform('stylus-2', opts);
 ```
