@@ -1,0 +1,21 @@
+{
+  "author": "Darien Maillet Valentine",
+  "description": "Compile stylus files with gobble",
+  "dependencies": {
+    "sander": "^0.3.4",
+    "stylus": "^0.51.1"
+  },
+  "devDependencies": {
+    "gobble": "^0.10.2"
+  },
+  "keywords": [
+    "css",
+    "gobble",
+    "gobble-plugin",
+    "stylus"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "name": "gobble-stylus",
+  "version": "0.0.1"
+}
