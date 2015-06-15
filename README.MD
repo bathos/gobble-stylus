@@ -57,7 +57,8 @@ provide indirect access to stylus’ `define` method.
  - `resolve url`: Boolean -- resolve relative URLs in imports
  - `sourcemap`: If truthy, generate sourcemap. In gobble-stylus, sourcemaps are
    default. This can also be an object with additional options:
-     - `comment`: Adds that comment line that I hate (off by default nyehhh)
+     - `comment`: Adds that comment line that I hate (not sure if this is
+       actually observed because of how Gobble handles sourcemaps later)
      - `inline`: Inlines the map as base64 (...wait what?)
      - `sourceRoot`: String; set the map’s source root
      - `basePath`: Default: `.`

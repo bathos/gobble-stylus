@@ -12,9 +12,6 @@ function gobbleStylus(input, opts) {
 	if (!('sourcemap' in opts) || opts.sourcemap === true)
 		opts.sourcemap = {};
 
-	if (!('comment' in opts.sourcemap))
-		opts.sourcemap.comment = false;
-
 	var renderer = stylus(input, opts);
 
 	for (var key in opts.defs)
